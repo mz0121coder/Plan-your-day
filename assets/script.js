@@ -36,3 +36,9 @@ function showHourSections() {
         } 
     });
 }
+// Load html content, add on click element
+$(document).ready(function() {  
+    showHourSections(); 
+    $("#loadTodayDate").html(loadTodayDate); 
+    $("button").on("click", saveActivity);
+  });
